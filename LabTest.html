@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <title>Lab-Test</title>
+    <style type="text/css">
+       
+         .input{
+            color: black;
+            display: inline-block;
+        }
+        .img{
+            position: sticky;
+            top: 0;
+         }
+         .button{
+            display: inline-block;
+            position: relative;
+            left: 40%;
+            top: 10%;
+            background-color: blueviolet;
+            color: azure;
+            font-size: 17px;
+             width: 70px;
+             height: 25px;
+         }
+    </style>
+</head>
+<body>
+    
+        <div class="img">
+        <img src="Images/Lab-Test/lab-test.jpg" alt="img" style="float: right;">
+    </div>
+    <form>
+        <h1>1.Your Contact Details</h1>
+            <input type="text" class="input" placeholder="Full Name" > <input type="number" class="input" placeholder="Patient ID if exists">
+            <br>
+            <input type="number" class="input" placeholder="Contact Number"> <input type="email" class="input" placeholder="Enter Email ID">
+            
+
+            <h1>2.Address</h1>
+            <input type="number" class="input" placeholder="H.NO"> <input type="text" class="input" placeholder="Street">
+            <br>
+            <input type="text" class="input" placeholder="Area">
+            <br>
+            <h3>District</h3>
+            <select class="input">
+                <option value="01">choose</option>
+                <option value="02">Area1</option>
+                <option value="03">Area2</option>
+            </select>
+            <br>
+
+
+            <h1>3.Choose the Test Type</h1>
+            <h3>Check atleast one box without fail</h3>
+            <label for="Radio" class="input">CBC</label>
+            <input type="radio" id="Radio">
+            <br>
+            <label for="Radio" class="input">Complete Urine</label>
+            <input type="radio" id="Radio">
+            <br>
+            <label for="Radio" class="input">Lipid Profile</label>
+            <input type="radio" id="Radio">
+            <br>
+            <label for="Radio" class="input">Thyroid Simulating Harmone(TSH)</label>
+            <input type="radio" id="Radio">
+            <br>
+            <label for="Radio" class="input">Glucose Test</label>
+            <input type="radio" id="Radio">
+            <br>
+
+
+            <h1>4.Do you want a hard copy of the test?</h1>
+            <label class="input">Yes</label>
+            <input type="radio">
+            <br>
+            <label class="input">No</label>
+            <input type="radio">
+            <br>
+
+
+            <h1>5.Select your comfortable date and time</h1>
+            <input type="date" placeholder="Date">
+            <br>
+            <input type="time" placeholder="time">
+            <br>
+        </form>
+    
+    <button class="button">Reset</button>
+    <button class="button">Submit</button>
+</body>
